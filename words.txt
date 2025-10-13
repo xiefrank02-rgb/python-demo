@@ -1,0 +1,10 @@
+rela_no1_relation
+rela_no2_relation
+rela_no3_relation
+loan_purpose_code
+education
+credit_card_number
+profession
+province
+city
+district
