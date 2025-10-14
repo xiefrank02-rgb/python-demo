@@ -23,8 +23,9 @@ def custom_words(word_file):
         words = [w.strip() for w in f if w.strip()]  # 去除空行与换行符
 
     # 生成新的单词列表
-    new_words = [f"<{word}>{{{{word}}}}</{word}>" for word in words]
-
+    # new_words = [f"<{word}>{{{{word}}}}</{word}>" for word in words]
+    new_words = [f"<{word}>{{{{{word}}}}}</{word}>" for word in words]
+    
     # 输出结果
     for _, new_word in zip(words, new_words):
         print(f"{new_word}")
