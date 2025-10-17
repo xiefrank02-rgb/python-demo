@@ -2,6 +2,7 @@ rela_no1_relation
 rela_no2_relation
 rela_no3_relation
 loan_purpose_code
-province
-city
-district
+province_lower
+city_lower
+district_lower
+monthly_income
