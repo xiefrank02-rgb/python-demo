@@ -26,7 +26,13 @@ def snake_to_camel(snake_str):
     
     return camel_case
 
+import re
 
+def camel_to_snake(camel_str):
+    # 在大写字母前加下划线，并转换成小写
+    snake_str = re.sub(r'([A-Z])', r'_\1', camel_str).lower()
+    # 如果字符串以下划线开始（例如：CamelCase -> _camel_case），去掉开头的下划线
+    return snake_str.lstrip('_')
 
 def change_words(word_file, prefix, suffix):
     # 读取单词列表
@@ -46,6 +52,7 @@ def custom_words(word_file):
         words = [w.strip() for w in f if w.strip()]  # 去除空行与换行符
 
     words_snake = [print(snake_to_camel(word)) for word in words]
+    print ("-----custom words------","\n")
     # 生成新的单词列表
     # new_words = [f"<{word}>{{{{word}}}}</{word}>" for word in words]
     new_words = [f"<{snake_to_camel(word)}>{{{{{word}}}}}</{snake_to_camel(word)}>" for word in words]
@@ -60,5 +67,7 @@ def custom_words(word_file):
 if __name__ == "__main__":
     word_file = 'words.txt'  # 包含要查找的单词的文件
     change_words(word_file, '"', '",')  # words.txt 
-    print("\n")
+    print  ("-----custom words------","\n")
     custom_words(word_file)
+    
+    print(camel_to_snake("lzdOwingPrincipal"))  # 输出: loan_purpose_code
