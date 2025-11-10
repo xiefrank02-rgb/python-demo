@@ -41,5 +41,13 @@ def find_word_in_file(word_file, target_file):
 
 if __name__ == "__main__":
     word_file = 'words.txt'  # 包含要查找的单词的文件
-    target_file = r"\\wsl.localhost\Ubuntu\home\xiefu01\repos\phiRisk\service\risk_flow\varsCalculation\antifraud_config.py"# 目标文件，查找单词所在位置
+    # target_file = r"\\wsl.localhost\Ubuntu\home\xiefu01\repos\phiRisk\service\risk_flow\varsCalculation\antifraud_config.py"
+    # find_word_in_file(word_file, target_file)
+    # print("****"*10)
+    target_file = r"\\wsl.localhost\Ubuntu\home\xiefu01\repos\phiRisk\service\risk_flow\droolsCalculation\jinjaDroolsTemplate\PhiLimitNew.xml"
+
+    find_word_in_file(word_file, target_file)
+    print("****"*10)
+    target_file = r"\\wsl.localhost\Ubuntu\home\xiefu01\repos\phiRisk\service\risk_flow\droolsCalculation\smt_drools_limit_new.py"
+    # target_file = r"\\wsl.localhost\Ubuntu\home\xiefu01\repos\phiRisk\service\risk_flow\droolsCalculation\ttcash_drools_limit_new.py"
     find_word_in_file(word_file, target_file)

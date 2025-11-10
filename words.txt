@@ -1,1 +1,8 @@
-lzd_owing_principal
+cardNo
+firstName
+middleName
+lastName
+birthDate
+frontImage
+backImage
+bizLine

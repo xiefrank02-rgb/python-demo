@@ -26,7 +26,6 @@ def snake_to_camel(snake_str):
     
     return camel_case
 
-import re
 
 def camel_to_snake(camel_str):
     # 在大写字母前加下划线，并转换成小写
