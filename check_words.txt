@@ -1,0 +1,7 @@
+card_type_ocr
+card_no_ocr
+first_name_ocr
+middle_name_ocr
+last_name_ocr
+birthdate_ocr 
+ubt_cnt_autosms_end

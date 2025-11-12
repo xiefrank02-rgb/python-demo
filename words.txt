@@ -1,3 +1,4 @@
+cardType
 cardNo
 firstName
 middleName
@@ -5,4 +6,3 @@ lastName
 birthDate
 frontImage
 backImage
-bizLine
